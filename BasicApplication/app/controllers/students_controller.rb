@@ -71,4 +71,8 @@ class StudentsController < ApplicationController
     def student_params
       params.require(:student).permit(:name, :rank, :level, :description)
     end
+
+    def normal_reg
+      return "Test GitHub"
+    end
 end
